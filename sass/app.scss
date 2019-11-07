@@ -1,0 +1,48 @@
+@import 'base';
+@import 'variables';
+@import 'imports';
+
+html{
+    font-family: $font-primary;
+}
+
+body {
+    h1{
+        color: $secondary;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: $margin;
+        color: $primary;
+    }
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.card{
+    width: 400px;
+    padding: $margin;
+    border-radius: 0.8rem;
+    box-shadow: 0px 10px 40px 10px rgba(245,245,245,1);
+}
+
+.card:hover{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 20px 40px 10px rgba(245,245,245,1);
+}
