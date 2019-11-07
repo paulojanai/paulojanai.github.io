@@ -17,7 +17,14 @@ body p {
   color: #646464; }
 
 .container {
-  min-height: 100vh;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+  .container margin {
+    left: 2rem;
+    right: 2rem; }
+
+.col-sm-all {
+  height: 100vh;
   display: flex; }
 
 .justify-content-center {
@@ -30,7 +37,7 @@ body p {
   flex-direction: column; }
 
 .card {
-  width: 400px;
+  width: 40%;
   padding: 2rem;
   border-radius: 0.8rem;
   box-shadow: 0px 10px 40px 10px whitesmoke; }
@@ -39,5 +46,15 @@ body p {
   margin-top: -10px;
   margin-bottom: 10px;
   box-shadow: 0px 20px 40px 10px whitesmoke; }
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .card {
+    width: 100%; } }
+@media (min-width: 480px) and (max-width: 768px) {
+  .card {
+    width: 80%; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 60%; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -18,7 +18,16 @@ body {
     }
 }
 .container {
-    min-height: 100vh;
+    margin-left: $margin;
+    margin-right: $margin;
+    margin {
+        left: $margin;
+        right: $margin;
+    }
+}
+
+.col-sm-all {
+    height: 100vh;
     display: flex;
 }
 
@@ -35,7 +44,7 @@ body {
 }
 
 .card{
-    width: 400px;
+    width: 40%;
     padding: $margin;
     border-radius: 0.8rem;
     box-shadow: 0px 10px 40px 10px rgba(245,245,245,1);
@@ -46,3 +55,18 @@ body {
     margin-bottom: 10px;
     box-shadow: 0px 20px 40px 10px rgba(245,245,245,1);
 }
+
+$resolution: 
+    0 480 100%,    
+    480 768 80%,
+    768 1024 60%;
+
+@each $min, $max, $percentage in $resolution{  
+    @media (min-width: #{$min}px) and (max-width: #{$max}px){
+        .card {
+            width: #{$percentage};
+        }
+    }
+}
+
+//@debug str-slice("Olá mundo", 0, -1);
