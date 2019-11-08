@@ -1,0 +1,10 @@
+{
+  "name": "cvjanai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paulojanai/paulojanai.github.io",
+  "author": "paulojanai <paulo4janay256@gmail.com>",
+  "license": "MIT",
+
+  "dependencies": {}
+}
