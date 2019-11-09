@@ -5,6 +5,11 @@
   "repository": "https://github.com/paulojanai/paulojanai.github.io",
   "author": "paulojanai <paulo4janay256@gmail.com>",
   "license": "MIT",
-
-  "dependencies": {}
+  "dependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/preset-env": "^7.7.1"
+  },
+  "scripts": {
+    "dev" : "babel ./app.js -o ./assets/js/bundle.js -w"
+  }
 }

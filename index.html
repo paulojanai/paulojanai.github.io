@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/fontawesome/all.css">
 </head>
-<body>
-    <div class="container text-center">
+<body onload="myFunction()">
+
+    <div class="loading" id="loading">
+        <lottie-player
+            class="item-loading"
+            src="./assets/animations/loading.json"  background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+
+    <div class="container text-center" id="container" style="display:none;">
         <div class="col-sm-all justify-content-center align-items-center flex-direction-column">
             <div class="thumb">
                 <img class="profile" src="./assets/img/profile-4x4.jpg" alt="">
@@ -43,6 +51,8 @@
         </div>
     </div>
 
+    <script src="./assets/js/bundle.js"></script>
     <script src="./assets/js/fontawesome/all.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

@@ -6,6 +6,23 @@ html{
     font-family: $font-primary;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$loading: $margin * 5;
+
+.item-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    width: $loading;
+    height: $loading;
+}
+
 body {
     .text-center {
         text-align: center;
@@ -22,9 +39,16 @@ body {
         color: $primary;
     }
 }
+
 .container {
+    position: relative;
     margin-left: $margin;
     margin-right: $margin;
+    animation: content-delay 2s;
+    @keyframes content-delay {
+        0% { opacity:0;}
+        100% { opacity:1; }
+    }
 }
 
 .social {

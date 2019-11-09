@@ -9,6 +9,19 @@
 html {
   font-family: Catamaran, sans-serif; }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.item-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  width: 10rem;
+  height: 10rem; }
+
 body .text-center {
   text-align: center; }
 body h1 {
@@ -20,9 +33,15 @@ body p {
   color: #646464; }
 
 .container {
+  position: relative;
   margin-left: 2rem;
-  margin-right: 2rem; }
-
+  margin-right: 2rem;
+  animation: content-delay 2s; }
+@keyframes content-delay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .social {
   display: flex;
   margin-top: 2rem; }
