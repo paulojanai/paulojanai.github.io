@@ -1,12 +1,10 @@
 "use strict";
 
-var myVar;
+var showPage = function showPage() {
+  document.querySelector("div.loading").style.display = "none";
+  document.querySelector("div.loading-content").style.display = "block";
+};
 
-function myFunction() {
-  myVar = setTimeout(showPage, 1200);
-}
-
-function showPage() {
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("container").style.display = "flex";
-}
+var myFunction = function myFunction() {
+  setTimeout(showPage, 1200);
+};

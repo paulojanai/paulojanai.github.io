@@ -32,6 +32,9 @@ body p {
   margin-top: 1rem;
   color: #646464; }
 
+.loading-content {
+  display: none; }
+
 .container {
   position: relative;
   margin-left: 2rem;

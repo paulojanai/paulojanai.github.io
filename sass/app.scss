@@ -40,6 +40,10 @@ body {
     }
 }
 
+.loading-content {
+    display: none;
+}
+
 .container {
     position: relative;
     margin-left: $margin;
