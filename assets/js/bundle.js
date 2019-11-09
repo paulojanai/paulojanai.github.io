@@ -6,5 +6,5 @@ var showPage = function showPage() {
 };
 
 var myFunction = function myFunction() {
-  setTimeout(showPage, 1200);
+  setTimeout(showPage, 2000);
 };
